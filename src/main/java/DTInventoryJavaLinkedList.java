@@ -41,10 +41,15 @@ public class DTInventoryJavaLinkedList {
         // TODO
         //  3. Add items to the front of the list (item1 and then item2)
         // use addFirst method
+        restockingList.addFirst(item1);
+        restockingList.addFirst(item2);
 
         // TODO
         // 4. Add items to the back of the list (item3, item4, item5)
         // use addLast method
+        restockingList.addLast(item3);
+        restockingList.addLast(item4);
+        restockingList.addLast(item5);
 
         // 5. Print the complete list before removals
         System.out.println("--- Full LinkedList Before Removals ---");
@@ -63,6 +68,7 @@ public class DTInventoryJavaLinkedList {
         // TODO
         // 7. Remove one element from the back (Tail)
         // use removeLast, parallel the removedFromFront code
+        InventoryItem removedFromBack = restockingList.removeLast();
         System.out.println("Removed from Back (Tail): " + removedFromBack);
         System.out.println(); // Formatting space
 

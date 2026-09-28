@@ -43,9 +43,15 @@ public class DTInventoryBasic {
 
         // TODO: Link the items together manually into a chain (Linear List)
         // (Students will write the lines below)
+        item1.next = item2;
+        item2.next = item3;
+        item3.next = item4;
+        item4.next = item5;
 
         // TODO: Create the head and tail references of the list
         // (Students will write the lines below)
+        InventoryItem head = item1;
+        InventoryItem tail = item5;
 
         // Print the linear linked list by traversing the links
         System.out.println("--- Traversing the Manual Node Chain (Linear List) ---");
